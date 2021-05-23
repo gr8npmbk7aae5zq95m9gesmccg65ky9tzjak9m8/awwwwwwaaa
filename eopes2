@@ -8,7 +8,7 @@ ShowerLib2.Settings.Default.TabSelectorSize = nil
 ShowerLib2.Settings.Default.TabSelectorColor =  nil
 ShowerLib2.Settings.Default.ItemFontSize = 14
 ShowerLib2.Settings.Default.ItemBackgroundColor = Color3.fromRGB(22, 22, 22);
-ShowerLib2.Settings.Default.ItemFont = Enum.Font.Code
+ShowerLib2.Settings.Default.ItemFont = Enum.Font.Roboto
 ShowerLib2.Settings.Default.ItemTextColor = Color3.fromRGB(190, 190, 190);
 ShowerLib2.Settings.Default.ButtonBackgroundColor = Color3.fromRGB(18, 18, 19)
 ShowerLib2.Settings.Default.TextBoxBackgroundColor = Color3.fromRGB(18, 18, 19)
@@ -64,7 +64,7 @@ function ShowerLib2:SetSettings(Table)
     ShowerLib2.Settings.Default.TabSelectorFont = Table.TabSelectorFont or nil
     ShowerLib2.Settings.Default.TabSelectorSize = Table.TabSelectorSize or nil
     ShowerLib2.Settings.Default.TabSelectorColor = Table.TabSelectorColor or nil
-    ShowerLib2.Settings.Default.ItemFont = Table.ItemFont or Enum.Font.Code
+    ShowerLib2.Settings.Default.ItemFont = Table.ItemFont or Enum.Font.Roboto
     ShowerLib2.Settings.Default.ItemFontSize = Table.ItemFontSize or 14
     ShowerLib2.Settings.Default.ItemTextColor =  Table.ItemTextColor or Color3.fromRGB(190, 190, 190);
     ShowerLib2.Settings.Default.ItemBackgroundColor = Table.ItemBackgroundColor or Color3.fromRGB(22, 22, 22);
@@ -79,7 +79,7 @@ function ShowerLib2:Notify(Table)
     assert(Table.Text, "Text expected");
     local TextSize = Table.TextSize or 17
     local Duration = Table.Duration or 3
-    local Font = Table.Font or Enum.Font.Code
+    local Font = Table.Font or Enum.Font.Roboto
     local IsRGB = Table.RGB or Table.Rgb or false
     local DefaultColor = Table.UnderlineColor or Table.Underlinecolor or Color3.fromRGB(255, 255, 255)
 
@@ -264,7 +264,7 @@ function ShowerLib2:CreateWindow(Name)
         Position = UDim2.new(0, 0, 0.0477941185, 0);
         Size = UDim2.new(0, 70, 0, 36);
         AutoButtonColor = false;
-        Font = Enum.Font.Code;
+        Font = Enum.Font.Roboto;
         Text = Name;
         TextColor3 = Color3.fromRGB(255, 255, 255);
         TextSize = 14.000;
@@ -515,7 +515,7 @@ function ShowerLib2:CreateWindow(Name)
                 BorderSizePixel = 0;
                 Position = UDim2.new(0.92, 0, 0.25, 0);
                 Size = UDim2.new(0, 17, 0, 16);
-                Font = Enum.Font.Code;
+                Font = Enum.Font.Roboto;
                 Text = "";
                 TextColor3 = Color3.fromRGB(0, 0, 0);
                 TextSize = 14.000;        
@@ -585,7 +585,7 @@ function ShowerLib2:CreateWindow(Name)
                 BorderSizePixel = 0;
                 Position = UDim2.new(0.88, 0, 0.25, 0);
                 Size = UDim2.new(0, 30, 0, 16);
-                Font = Enum.Font.Code;
+                Font = Enum.Font.Roboto;
                 Text = "";
                 TextColor3 = Color3.fromRGB(0, 0, 0);
                 TextSize = 14.000;        
@@ -701,7 +701,7 @@ function ShowerLib2:CreateWindow(Name)
                 BorderColor3 = Color3.fromRGB(18, 18, 18);
                 Position = UDim2.new(0.0340817571, 0, 0.222222224, 0);
                 Size = UDim2.new(0, 65, 0, 15);
-                Font = Enum.Font.Code;
+                Font = Enum.Font.Roboto;
                 Text = "Rainbow";
                 TextColor3 = Color3.fromRGB(190, 190, 190);
                 TextSize = 10.000;
@@ -717,7 +717,7 @@ function ShowerLib2:CreateWindow(Name)
                 BorderSizePixel = 0;
                 Position = UDim2.new(0.825198233, 0, 0.17592591, 0);
                 Size = UDim2.new(0, 17, 0, 16);
-                Font = Enum.Font.Code;
+                Font = Enum.Font.Roboto;
                 Text = "";
                 TextColor3 = Color3.fromRGB(0, 0, 0);
                 TextSize = 14.000;
@@ -859,7 +859,7 @@ function ShowerLib2:CreateWindow(Name)
                 BorderColor3 = ShowerLib2.Settings.Default.TextBoxBackgroundColor;
                 Position = UDim2.new(0.584999979, 0, 0.175999999, 0);
                 Size = UDim2.new(0, 126, 0, 16);
-                Font = Enum.Font.Code;
+                Font = Enum.Font.Roboto;
                 PlaceholderColor3 = ShowerLib2.Settings.Default.ItemTextColor;
                 Text = Name;
                 TextColor3 = ShowerLib2.Settings.Default.ItemTextColor;
